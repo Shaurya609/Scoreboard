@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="score.js"></script>
+    <title>Scoreboard</title>
+</head>
+
+<body class="container-fluid">
+    <br><br>
+    <div class="card score">
+        <div class="card-text text-center">
+            <div class="participant">
+                <p>Shaurya <span id="score-a" style="padding: 5px;">0</span></p>
+            </div>
+            <div class="participant">
+                <p>Nikhil <span id="score-b" style="padding: 5px;">0</span></p>
+            </div>
+            <div class="participant">
+                <p>Sripriya <span id="score-c" style="padding: 5px;">0</span></p>
+            </div>
+            <div class="participant">
+                <p>Raunak <span id="score-d" style="padding: 5px;">0</span></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="button" onclick="increasescore10('participant-a')">Add 10 points A</button>
+    <button type="button" onclick="increasescore10('participant-b')">Add 10 points B</button>
+    <button type="button" onclick="increasescore10('participant-c')">Add 10 points C</button>
+    <button type="button" onclick="increasescore10('participant-d')">Add 10 points D</button>
+    <br> <br>
+    <button type="button" onclick="increasescore20('participant-a')">Add 20 points A</button>
+    <button type="button" onclick="increasescore20('participant-b')">Add 20 points B</button>
+    <button type="button" onclick="increasescore20('participant-c')">Add 20 points C</button>
+    <button type="button" onclick="increasescore20('participant-d')">Add 20 points D</button>
+    <br> <br>
+    <button type="button" onclick="resetscore()">Reset Score</button>
+</body>
+
+</html>

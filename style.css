@@ -1,0 +1,19 @@
+.score{
+    background-color: #ffcc66;
+    display: block;
+    width:500px;
+}
+
+.participant{
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 0%;
+    display: inline-block;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+span{
+    background-color: white;
+    border-radius: 20%;
+}
